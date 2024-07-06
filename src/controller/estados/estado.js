@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   try {
     res.status(200).json(dados.estadosBrasileiros);
   } catch (error) {
-    console.error("Erro linha 10 app.js: ", error);
+    console.error("Erro linha 11 estado.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
 });

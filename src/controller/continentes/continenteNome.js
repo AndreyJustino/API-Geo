@@ -19,7 +19,7 @@ router.get("/:nome", (req, res) => {
     }
 
   } catch (error) {
-    console.error("Erro linha 48 app.js: ", error);
+    console.error("Erro linha 22 continenteNome.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
 });

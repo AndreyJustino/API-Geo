@@ -9,7 +9,7 @@ router.get("/:id", (req, res) => {
     const id = req.params.id;
     res.status(200).json(dados.estadosBrasileiros[id - 1]);
   } catch (error) {
-    console.error("Erro linha 20 app.js: ", error);
+    console.error("Erro linha 12 estadoId.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
 });

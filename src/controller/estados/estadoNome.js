@@ -18,7 +18,7 @@ router.get("/:nome", (req, res) => {
 
     res.status(200).json(dados.estadosBrasileiros[index]);
   } catch (error) {
-    console.error("Erro linha 35 app.js: ", error);
+    console.error("Erro linha 21 estado.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
 });

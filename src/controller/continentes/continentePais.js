@@ -25,7 +25,7 @@ router.get("/:pais", (req, res) => {
     }
 
   } catch (error) {
-    console.error("Erro linha 64 app.js: ", error);
+    console.error("Erro linha 28 continentePais.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
 });
