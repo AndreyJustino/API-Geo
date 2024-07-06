@@ -17,7 +17,6 @@ router.get("/:nome", (req, res) => {
     } else {
       res.status(200).json(dados.continentes[index]);
     }
-
   } catch (error) {
     console.error("Erro linha 22 continenteNome.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
