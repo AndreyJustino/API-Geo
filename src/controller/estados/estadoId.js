@@ -4,7 +4,7 @@ import dados from "../../repository/data.js";
 
 const router = express.Router();
 
-router.get(`/:id`, (req, res) => {
+router.get("/:id", (req, res) => {
   try {
     const id = req.params.id;
     res.status(200).json(dados.estadosBrasileiros[id - 1]);

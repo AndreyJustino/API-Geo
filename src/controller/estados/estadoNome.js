@@ -4,7 +4,7 @@ import dados from "../../repository/data.js";
 
 const router = express.Router();
 
-router.get(`/:nome`, (req, res) => {
+router.get("/:nome", (req, res) => {
   try {
     const nome = req.params.nome;
 
