@@ -1,12 +1,12 @@
 import express from "express";
-import data from "../../repository/data.js";
+import {siglas} from "../../repository/data.js";
 
 const router = express.Router();
 
 router.get("/:nome", async (req, res) => {
   const nome = req.params.nome.toLocaleUpperCase();
 
-  let index = data.siglas.findIndex((value) => {
+  let index = siglas.findIndex((value) => {
     if (value.nome.toLocaleUpperCase() == nome) {
       return value.sigla;
     }
@@ -16,7 +16,7 @@ router.get("/:nome", async (req, res) => {
     res.status(404).send("Siglas não encontradas");
   }
 
-  let sigla = data.siglas[index].sigla;
+  let sigla = siglas[index].sigla;
 
   const url = await fetch(`https://flagsapi.com/${sigla}/shiny/64.png`);
   const buffe = await url.arrayBuffer();

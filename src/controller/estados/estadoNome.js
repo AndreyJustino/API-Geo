@@ -1,6 +1,6 @@
 import express from "express";
 
-import dados from "../../repository/data.js";
+import {estadosBrasileiros} from "../../repository/data.js";
 
 const router = express.Router();
 
@@ -8,7 +8,7 @@ router.get("/:nome", (req, res) => {
   try {
     const nome = req.params.nome;
 
-    let index = dados.estadosBrasileiros.findIndex((estado) => {
+    let index = estadosBrasileiros.findIndex((estado) => {
       return estado.nome.toLocaleUpperCase() == nome.toLocaleUpperCase();
     });
 
@@ -16,7 +16,7 @@ router.get("/:nome", (req, res) => {
       res.status(404).send(`Estado não encontrado!`);
     }
 
-    res.status(200).json(dados.estadosBrasileiros[index]);
+    res.status(200).json(estadosBrasileiros[index]);
   } catch (error) {
     console.error("Erro linha 21 estado.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");

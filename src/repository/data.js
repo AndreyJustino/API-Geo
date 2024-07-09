@@ -1,4 +1,4 @@
-const estadosBrasileiros = [
+export const estadosBrasileiros = [
   {
     id: 1,
     nome: "Acre",
@@ -178,7 +178,7 @@ const estadosBrasileiros = [
   },
 ];
 
-const continentes = [
+export const continentes = [
   {
     nome: "Africa",
     paises: [
@@ -1604,7 +1604,7 @@ const continentes = [
   },
 ];
 
-const siglas = [
+export const siglas = [
   { sigla: "AD", nome: "Andorra" },
   { sigla: "AE", nome: "Emirados Arabes Unidos" },
   { sigla: "AF", nome: "Afeganistao" },
@@ -1860,5 +1860,3 @@ const siglas = [
   { sigla: "ZM", nome: "Zambia" },
   { sigla: "ZW", nome: "Zimbabue" },
 ];
-
-export default { estadosBrasileiros, continentes, siglas };

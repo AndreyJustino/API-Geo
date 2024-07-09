@@ -1,6 +1,6 @@
 import express, { json } from "express";
 
-import dados from "../../repository/data.js";
+import {continentes} from "../../repository/data.js";
 
 const router = express.Router();
 
@@ -9,7 +9,7 @@ router.get("/:pais", (req, res) => {
     const paisNome = req.params.pais;
     let info;
 
-    dados.continentes.forEach((element) => {
+    continentes.forEach((element) => {
       element.paises.findIndex((value) => {
         if (value.nome.toLocaleUpperCase() == paisNome.toLocaleUpperCase()) {
           info = value;
