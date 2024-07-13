@@ -1,9 +1,6 @@
-import express from "express";
 import { siglas } from "../../database/data.js";
 
-const router = express.Router();
-
-router.get("/:nome", async (req, res) => {
+export const bandeira = async (req, res) => {
   const nome = req.params.nome.toLocaleUpperCase();
 
   let index = siglas.findIndex((value) => {
@@ -25,6 +22,6 @@ router.get("/:nome", async (req, res) => {
   res.set("Content-Disposition", `inline; filename="${sigla}.png"`);
 
   res.send(Buffer.from(buffe));
-});
+};
 
-export default router;
+

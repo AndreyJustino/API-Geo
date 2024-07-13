@@ -1,10 +1,6 @@
-import express, { json } from "express";
-
 import { continentes } from "../../database/data.js";
 
-const router = express.Router();
-
-router.get("/:pais", (req, res) => {
+export const continentePais = (req, res) => {
   try {
     const paisNome = req.params.pais;
     let info;
@@ -26,6 +22,5 @@ router.get("/:pais", (req, res) => {
     console.error("Erro linha 28 continentePais.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
-});
+};
 
-export default router;

@@ -1,10 +1,6 @@
-import express from "express";
-
 import { estadosBrasileiros } from "../../database/data.js";
 
-const router = express.Router();
-
-router.get("/:nome", (req, res) => {
+export const estadoNome = (req, res) => {
   try {
     const nome = req.params.nome;
 
@@ -21,6 +17,5 @@ router.get("/:nome", (req, res) => {
     console.error("Erro linha 21 estado.js: ", error);
     res.status(400).send("Algum erro aconteceu, tente novamente.");
   }
-});
+};
 
-export default router;
