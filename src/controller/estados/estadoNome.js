@@ -1,6 +1,6 @@
 import express from "express";
 
-import {estadosBrasileiros} from "../../repository/data.js";
+import { estadosBrasileiros } from "../../database/data.js";
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 import express from "express";
-import {siglas} from "../../repository/data.js";
+import { siglas } from "../../database/data.js";
 
 const router = express.Router();
 

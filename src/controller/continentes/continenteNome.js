@@ -1,6 +1,6 @@
 import express from "express";
 
-import {continentes} from "../../repository/data.js";
+import { continentes } from "../../database/data.js";
 
 const router = express.Router();
 
