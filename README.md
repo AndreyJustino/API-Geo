@@ -27,6 +27,11 @@ Execute o comando abaixo para instalar as dependencias
 
     npm install
 
+## Rodar
+Execute o comando abaixo para rodar a aplicação
+
+    npm run start
+
 ## API Reference
 
 #### Pegar todos os estados
