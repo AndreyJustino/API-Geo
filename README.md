@@ -23,7 +23,7 @@ A API também disponibiliza dados sobre todos os continentes: África, Ásia, Am
     Território: Extensão territorial do país
 
 ## Instalação
-## Execute o comando abaixo para instalar as dependencias
+Execute o comando abaixo para instalar as dependencias
 
     npm install
 
