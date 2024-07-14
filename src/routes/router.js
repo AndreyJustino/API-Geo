@@ -9,11 +9,11 @@ import {continentePais} from "../controller/continentes/continentePais.js";
 
 const router = express();
 
-router.use("/bandeira/:nome", bandeira)
-router.use("/estado", estado);
-router.use("/estadoId/:id", estadoId);
-router.use("/estadoNome/:nome", estadoNome);
-router.use("/continenteNome/:nome", continenteNome);
-router.use("/continentePais/:pais", continentePais);
+router.get("/bandeira/:nome", bandeira)
+router.get("/estado", estado);
+router.get("/estadoId/:id", estadoId);
+router.get("/estadoNome/:nome", estadoNome);
+router.get("/continenteNome/:nome", continenteNome);
+router.get("/continentePais/:pais", continentePais);
 
 export default router;
