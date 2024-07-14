@@ -21,6 +21,12 @@ A API também disponibiliza dados sobre todos os continentes: África, Ásia, Am
     Presidente: Nome do presidente do país
     População: Número de habitantes do país
     Território: Extensão territorial do país
+
+## Instalação
+## Execute o comando abaixo para instalar as dependencias
+
+    npm install
+
 ## API Reference
 
 #### Pegar todos os estados
