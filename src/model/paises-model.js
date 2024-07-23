@@ -1,6 +1,8 @@
+let idAuto = 1
+
 export class Pais {
     constructor(id, nome, presidente, habitantes, territorio){
-        this.id = id;
+        this.id = idAuto++;
         this.nome = nome;
         this.presidente = presidente;
         this.habitantes = habitantes;
