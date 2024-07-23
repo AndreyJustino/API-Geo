@@ -22,9 +22,11 @@ A API também disponibiliza dados sobre todos os continentes: África, Ásia, Am
     População: Número de habitantes do país
     Território: Extensão territorial do país
 
-## Instalação
+## Clone o repositório e faça a Instalação
 Execute o comando abaixo para instalar as dependencias
 
+    git clone https://github.com/AndreyJustino/API-Geo.git
+    cd API-Geo
     npm install
 
 ## Rodar
