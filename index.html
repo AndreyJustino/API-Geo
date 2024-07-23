@@ -12,9 +12,8 @@
         <img src="img/logo-api-geo.png" alt="logo api geo" id="logo">
         <nav class="nav">
             <ul class="menu">
-                <li class="option"><a href="">Home</a></li>
-                <li class="option"><a href="">Github</a></li>
-                <li class="option"><a href="">Documentação</a></li>
+                <li class="option"><a href="https://github.com/AndreyJustino/API-Geo" target="_blank">Github</a></li>
+                <li class="option"><a href="https://api-geo.onrender.com/estado" target="_blank">EndPoint</a></li>
             </ul>
         </nav>
 
@@ -22,9 +21,8 @@
 
         <nav class="nav-hamburguer">
             <ul class="menu-hamburguer">
-                <li class="option"><a href="">Home</a></li>
-                <li class="option"><a href="">Github</a></li>
-                <li class="option"><a href="">Documentação</a></li>
+                <li class="option"><a href="https://github.com/AndreyJustino/API-Geo" target="_blank">Github</a></li>
+                <li class="option"><a href="https://api-geo.onrender.com/estado" target="_blank">EndPoint</a></li>
             </ul>
         </nav>
     </header>
@@ -40,8 +38,198 @@
             <div class="box-logo">
                 <img src="img/logo-api-geo.png" alt="logo api geo">
             </div>
-
-            
+        </section>
+        <section class="documentacao">
+            <div>
+                <h1>Estados brasileiros</h1>
+                <p>
+                    Para cada estado do Brasil, a API oferece os seguintes dados:
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>ID: Identificador único do estado</p>
+                
+                    <p>Nome: Nome do estado</p>
+                    <p>Sigla: Abreviação do estado</p>
+                
+                    <p>Capital: Capital do estado</p>
+                    <p>População: Número de habitantes do estado</p>
+                </div>
+            </div>
+            <div>
+                <h1>Continentes</h1>
+                <p>
+                    A API também disponibiliza dados sobre todos os continentes: África, Ásia, América do Norte, América do Sul, Europa e Oceania. Para cada continente, você pode acessar informações detalhadas sobre os países que o compõem, incluindo:
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>ID: Identificador único do país</p>
+                
+                    <p>Nome: Nome do país</p>
+                    <p>Presidente: Nome do presidente do país</p>
+                
+                    <p>População: Número de habitantes do país</p>
+                    <p>Território: Extensão territorial do país</p>
+                </div>
+            </div>
+            <div>
+                <h1>Rodar</h1>
+                <p>
+                    Execute o comando abaixo para instalar as dependencias
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>npm install</p>
+                </div>
+            </div>
+            <div>
+                <h1>API Reference</h1>
+                <p>
+                    Pegar todos os estados
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com/estado</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Pegar estado por nome
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com/estadoNome/{nome}</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetro</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome</td>
+                            <td>String</td>
+                            <td><span class="span-bold">Obrigatório</span>. Nome do estado sem acento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>
+                    Pegar estado por ID
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com/estadoId/{id}</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetro</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td>Int</td>
+                            <td><span class="span-bold">Obrigatório</span>. Id do estado. Do 1 ao 27</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>
+                    Pegar continente por Nome
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com/continenteNome/{nome}</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetro</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome</td>
+                            <td>String</td>
+                            <td><span class="span-bold">Obrigatório</span>. Nome do continente. Sem acentos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>
+                    Pegar país por Nome
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com/continentePais/{nome}</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetro</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome</td>
+                            <td>String</td>
+                            <td><span class="span-bold">Obrigatório</span>. Nome do país. Sem acento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>
+                    Pegar bandeira de um País pelo nome
+                </p>
+                <hr>
+                <div class="box-pre">
+                    <p>GET - https://api-geo.onrender.com//bandeira/{nome}</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetro</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome</td>
+                            <td>String</td>
+                            <td><span class="span-bold">Obrigatório</span>. Nome do país que se deseja ver a bandeira. Sem acento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h1>Demo</h1>
+                
+                <hr>
+                <div class="box-pre">
+                    <p><a href="https://api-geo.onrender.com/" target="_blank">Clique aqui</a></p>
+                </div>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
